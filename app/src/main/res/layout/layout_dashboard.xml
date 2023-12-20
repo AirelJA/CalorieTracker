@@ -16,10 +16,12 @@
         android:layout_width="358dp"
         android:layout_height="48dp"
         android:layout_marginStart="26dp"
+        android:layout_marginEnd="27dp"
         android:layout_marginBottom="19dp"
         android:background="@drawable/button"
         android:text="Hitung Kalori"
         app:layout_constraintBottom_toTopOf="@+id/buttonWorkoutMenuImg"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
@@ -54,11 +56,13 @@
         android:id="@+id/buttonHWOMenu"
         android:layout_width="358dp"
         android:layout_height="48dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="27dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/button"
         android:text="Home Workout"
         app:layout_constraintBottom_toTopOf="@+id/buttonBMIMenuImg"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.Group

@@ -20,7 +20,7 @@ public class homeworkout extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_homeworkout);
 
-        btnBack = findViewById(R.id.backBtnWorkout);
+        btnBack = findViewById(R.id.btnBackHitungKal);
         btnHWOBurpess = findViewById(R.id.btnHWBurpees);
         btnHWOMtclimb = findViewById(R.id.btnHWMtClimb);
         btnHWOPushup = findViewById(R.id.btnHWPushup);

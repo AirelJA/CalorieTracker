@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,6 +20,7 @@ public class bmiKalkulator extends AppCompatActivity {
         EditText editTextWeight = findViewById(R.id.Weight);
         EditText editTextHeight = findViewById(R.id.Height);
         Button btnBMI = findViewById(R.id.btnHitung);
+        ImageButton btnBack = findViewById(R.id.backbtn);
 
         btnBMI.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,6 +31,14 @@ public class bmiKalkulator extends AppCompatActivity {
 
                 Intent intent = new Intent(bmiKalkulator.this, hasilBMI.class);
                 intent.putExtra("BMI_VALUE", bmi);
+                startActivity(intent);
+            }
+        });
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(bmiKalkulator.this, dashboardActivity.class);
                 startActivity(intent);
             }
         });

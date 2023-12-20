@@ -3,6 +3,7 @@ package com.example.calorietrackerbeta;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -19,8 +20,17 @@ public class hasilBMI extends AppCompatActivity {
         TextView hasilStatus = findViewById(R.id.textResult);
         TextView hasilRekomen = findViewById(R.id.bmiHasilRec);
         ImageButton btnBack = findViewById(R.id.btnBackBMIHasil);
+        Button btnUlang = findViewById(R.id.btnHitungUlang);
 
         btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(hasilBMI.this, bmiKalkulator.class);
+                startActivity(intent);
+            }
+        });
+
+        btnUlang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(hasilBMI.this, bmiKalkulator.class);
@@ -37,7 +47,7 @@ public class hasilBMI extends AppCompatActivity {
 
         if (bmi <= 18.4) {
             hasilStatus.setText("Underweight");
-            hasilStatus.setTextColor(getResources().getColor(R.color.yellow));
+            hasilStatus.setTextColor(getResources().getColor(R.color.cyan));
             TextRekomen = "Healthy tips to gain weight: Eat nutrient-dense foods, increase calorie intake, and include protein-rich meals in your diet.";
         } else if (bmi <= 25) {
             hasilStatus.setText("Normal");

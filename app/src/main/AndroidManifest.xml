@@ -31,6 +31,16 @@
         <activity
             android:name=".workoutActivityPushup"
             android:exported="false"/>
+        <activity
+            android:name=".workoutActivityMTClimb"
+            android:exported="false"/>
+        <activity
+            android:name=".workoutActivityBurpees"
+            android:exported="false"/>
+        <activity
+            android:name=".workoutActivitySitup"
+            android:exported="false"/>
+
 
         <activity
             android:name=".welcomePage"
